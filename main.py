@@ -2,11 +2,14 @@ from utils import readVideo, saveVideo
 from trackers import Tracker
 
 def main():
+    modelPath = "models/best.pt"
+    videoPath = "inputVideos/15sec_input_720p.mp4"
+
     # Read Video
-    videoFrames = readVideo("inputVideos/15sec_input_720p.mp4")
+    videoFrames = readVideo(videoPath)
 
     # Initialize Tracker
-    tracker = Tracker("models/best.pt")
+    tracker = Tracker(modelPath)
 
     tracks = tracker.getObjectTracks(videoFrames)
 
