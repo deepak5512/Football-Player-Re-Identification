@@ -72,7 +72,17 @@ Ensure the paths to the model and input video are correctly specified in the `ma
 
 ---
 
-### 6. Run the Program
+### 6. Install the dependencies
+
+Execute the following command in the terminal:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### 7. Run the Program
 
 Execute the following command in the terminal:
 
